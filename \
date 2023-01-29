@@ -1,0 +1,10 @@
+const buttonColours=["red", "blue", "green", "yellow"];
+const gamePattern = [nextSequence()];
+$(`#${gamePattern}`).fadeTo(100, 0.3, function() { $(this).fadeTo(500, 1.0); });
+Audio(`./sounds/${gamepattern}`).play
+function nextSequence()
+{
+	const randomNumber = Math.floor(Math.random()*4);
+	const randomChosenColour = buttonColours[randomNumber];
+	return randomChosenColour;
+}
